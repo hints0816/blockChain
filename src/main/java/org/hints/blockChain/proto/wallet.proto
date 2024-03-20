@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package wallet;
+
+option java_package = "org.hints.blockChain.wallet";
+option java_outer_classname = "Protos";
+
+message Wallet {
+  optional string network = 1;
+  optional bytes keyChainGroup = 2;
+  optional bytes privateKey = 3;
+  optional bytes publicKey = 4;
+}
